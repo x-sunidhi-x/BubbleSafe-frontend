@@ -21,7 +21,7 @@ const handleOTPgen = (event) => {
   let data = {
     email: email,
   }
-  Axios.post("http://localhost:8000/user-create/send-otp", data)
+  Axios.post("https://bubblesafe-backend.onrender.com/user-create/send-otp", data)
     .then((res) => {
       if (res.data.status === 500) {
         console.log(res.data.error)
@@ -47,7 +47,7 @@ const handleSignup = (event) => {
       password: password,
       otp:otp
     }
-    Axios.post("http://localhost:8000/user-create/signup", data, {
+    Axios.post("https://bubblesafe-backend.onrender.com/signup", data, {
       withCredentials: true,  cors: true 
     })
       .then((res) => {
