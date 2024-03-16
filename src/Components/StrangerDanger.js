@@ -1,7 +1,7 @@
 import './StrangerDanger.css'
 import child from './images/both.png'
 import React, { useState, useEffect, useRef, Component } from 'react';
-import useSound from 'use-sound'
+
 import Confetti from './Confetti'
 import buzzer from './images/invalid-selection-39351.mp3'
 import correctsound from './images/mixkit-correct-answer-tone-2870.wav'
